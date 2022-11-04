@@ -1,0 +1,73 @@
+.join {
+    display: flex;
+    gap: 10rem;
+}
+
+.join .left-s {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.join .left-s hr {
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+
+.join .left-s>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.join .right-s {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.join form {
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+
+.join form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+    width: 190px;
+}
+
+.join form input::placeholder {
+    color: var(--lightgray);
+}
+
+.join form button {
+    background-color: var(--orange);
+    color: white;
+    padding: 0.5rem;
+}
+
+@media(max-width:1200px) {
+    .join {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media(max-width:767px) {
+    .join .left-s {
+        font-size: 1.5rem;
+    }
+
+    .join form {
+        gap: 1rem;
+    }
+}

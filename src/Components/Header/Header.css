@@ -1,18 +1,67 @@
 .mainHeader {
     display: flex;
     justify-content: space-between;
+    padding-left: 1rem;
 }
-.logo {
+
+.mainHeader .logo {
     width: 10rem;
     height: 3rem;
 }
-.header-menu {
+
+.mainHeader ul {
     list-style: none;
     display: flex;
-    gap: 2rem ;
+    gap: 2rem;
     color: white;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    z-index: 5;
 }
-.header-menu li:hover {
+
+.mainHeader ul li:hover {
     cursor: pointer;
     color: var(--orange);
+}
+
+.mainHeader .header-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    top: 2rem;
+    z-index: 3;
+}
+
+.mainHeader .header-menu p {
+    width: 2rem;
+    height: 3px;
+    background-color: white;
+}
+
+@media(max-width:767px) {
+    .mainHeader .header-menu {
+        display: flex;
+
+    }
+
+    .mainHeader ul {
+        display: none;
+    }
+
+    .mainHeader ul.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 1rem;
+        top: 3.9rem;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+
+    .mainHeader ul.hidden {
+        display: none;
+    }
 }
