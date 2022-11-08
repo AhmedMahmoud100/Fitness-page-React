@@ -30,7 +30,7 @@
     gap: 0.5rem;
     cursor: pointer;
     position: fixed;
-    right: 2rem;
+    right: 1rem;
     top: 2rem;
     z-index: 3;
 }

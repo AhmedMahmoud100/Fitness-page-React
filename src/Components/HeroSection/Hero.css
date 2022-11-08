@@ -276,12 +276,4 @@
     .the-best-ad {
         margin-top: 0;
     }
-    .hero-buttons {
-        justify-content: center;
-    }
-}
-@media(max-width:500px) {
-    .hero-image{
-        max-width: 17rem;
-    }
 }

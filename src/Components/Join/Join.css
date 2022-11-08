@@ -71,9 +71,3 @@
         gap: 1rem;
     }
 }
-@media (max-width:767px) {
-    .join .left-s hr {
-        width: 15.5rem;
-        margin: -17px 0 ;
-    } 
-}
