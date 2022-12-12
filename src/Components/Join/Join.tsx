@@ -1,21 +1,23 @@
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import './Join.css'
 import emailjs from 'emailjs-com'
-
+import toast, { Toaster } from "react-hot-toast";
 export default function Join() {
   const form = useRef<any>()
   const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs.sendForm('service_3g3tl0e', 'template_h1yyf0q', form.current, 'berH8couvWpdxMnA-')
-      .then((result) => {
-        console.log(result.text);
+      .then(() => {
+        form.current.reset();
+        toast.success("Email send Successfully");
       }, (error) => {
-        console.log(error.text);
+        toast.error(error.text);
       });
   }
   return (
     <div className='join container' id='join-us'>
+      <Toaster />
       <section className="left-s">
         <hr />
         <div>
