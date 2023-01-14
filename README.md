@@ -3,7 +3,7 @@
 fitness-page
 
 ## Demo
-[https://fitness-page-react.netlify.app/)
+https://fitness-page-react.netlify.app/
 
 
 ## Built with
